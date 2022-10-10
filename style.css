@@ -1,0 +1,12 @@
+header {
+    color: white;
+    height: 65px;
+    text-align: right;
+    background-image: linear-gradient(to right, rgb(95, 95, 171), rgb(11, 11, 85));
+    width: 100%;
+} 
+
+.form-label {
+    
+}
+ 
