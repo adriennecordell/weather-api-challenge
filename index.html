@@ -9,92 +9,21 @@
   <link href="reset.css " rel="stylesheet">
   <link href="style.css " rel="stylesheet">
     <title>Weather Dashboard</title>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Jumborton -->
     <div class="header">
         <h2>Weather Dashboard</h2>
     </div>
-
-
-    <!-- Search bar -->
-    <div class="row">
-        <div class="col-12 col-md-3 bg-light">
-            <h3 class="search">Search for a city:</h3>
-            <form class="input-group" autocomplete="off" action="">
-                <input type="text" class="form-input" id="search-city" name="search-city" autofocus="true" />
-                <button type="submit" class="btn" id="search-button">Search</button>
-                <!--section for search city history-->
-                <button class="btn" type="button" id="clear-history">Clear history</button>
-            </form>
-            <ul class="list-group"></ul>
-        </div>
-
-        <!-- Main Display -->
-        <div class="col-12 col-md-9">
-            <div class="card bg-white">
-                <div id="current-weather">
-                    <h3 class="city-name" id="current-city"><small id="current-date"></small></h3>
-                    <p><b>Temperature: </b><span class="current" id="temp-input"></span></p>
-                    <p><b>Wind Speed: </b><span class="current" id="wind-input"></span></p>
-                    <p><b>Humidity: </b><span class="current" id="humidity-input"></span></p>
-                    <p><b>UV Index: </b><span class="current bg-danger rounded" id="uv-input"></span></p>
-                </div>
-            </div>
-
-            <!-- 5-Days Forecast -->
-            <div class="col-sm-12" id="future-weather">
-                <h3 class="forecast-headding">5-Day Forecast:</h3>
-                <div class="row text-light">
-                    <div class="forecast-card col-sm-2 text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="date0"></p>
-                        <p id="img0"></p>
-                        <p>Temp: <span id="temp0"></span></p>
-                        <p>Wind: <span id="wind0"></span></p>
-                        <p>Humidity: <span id="humidity0"></span></p>
-                    </div>
-
-                    <div class="forecast-card col-sm-2 text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="date1"></p>
-                        <p id="img1"></p>
-                        <p>Temp: <span id="temp1"></span></p>
-                        <p>Wind: <span id="wind1"></span></p>
-                        <p>Humidity: <span id="humidity1"></span></p>
-                    </div>
-
-                    <div class="forecast-card col-sm-2 text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="date2"></p>
-                        <p id="img2"></p>
-                        <p>Temp: <span id="temp2"></span></p>
-                        <p>Wind: <span id="wind2"></span></p>
-                        <p>Humidity: <span id="humidity2"></span></p>
-                    </div>
-
-                    <div class="forecast-card col-sm-2 text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="date3"></p>
-                        <p id="img3"></p>
-                        <p>Temp: <span id="temp3"></span></p>
-                        <p>Wind: <span id="wind3"></span></p>
-                        <p>Humidity: <span id="humidity3"></span></p>
-                    </div>
-
-                    <div class="forecast-card col-sm-2 text-white ml-2 mb-3 p-2 mt-2 rounded">
-                        <p id="date4"></p>
-                        <p id="img4"></p>
-                        <p>Temp: <span id="temp4"></span></p>
-                        <p>Wind: <span id="wind4"></span></p>
-                        <p>Humidity: <span id="humidity4"></span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- jQuery Js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-
+    <div class="input">
+        <input type="text" class="inputValue" placeholder="Enter a city!">
+        <input type="submit" value="submit" class="button">
+    </div>
+    <div class="display">
+        <h1 class="name"></h1>
+        <p class="desc"></p>
+        <p class="temp"></p>
+    </div>
+        <script src="script.js"></script>
+</body>
 </html>
